@@ -1,0 +1,32 @@
+{
+  "name": "vue-template",
+  "version": "1.0.0",
+  "description": "Set up of Vue.js template with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config build/webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nate-stoltz/vue-template.git"
+  },
+  "author": "Nate Stoltz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nate-stoltz/vue-template/issues"
+  },
+  "homepage": "https://github.com/nate-stoltz/vue-template#readme",
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6"
+  },
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "vue-loader": "^15.9.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}
