@@ -4,6 +4,7 @@ const webpack = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 function resolve (dir) {
@@ -45,7 +46,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'vue-style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'
         ]
@@ -64,6 +65,9 @@ module.exports = {
       from: resolve('assets/images'),
       to: resolve('dist/assets/images'),
       toType: 'dir'
-    }])
+    }]),
+    new MiniCssExtractPlugin({
+      filename: 'main.css'
+    })
   ]
 }

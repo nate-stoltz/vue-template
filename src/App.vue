@@ -1,7 +1,7 @@
 <template>
   <div class="page-wrap">
     <div class="center-content">
-      <headline name="People of Earth" />
+      <headline name="Abby" />
     </div>
   </div>
 </template>
