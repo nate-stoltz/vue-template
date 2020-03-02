@@ -1,0 +1,20 @@
+.main-nav {
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items:center;
+    .main-nav-item {
+        margin:0 20px 0 0;
+        &:last-child {
+            margin-right:0;
+        }
+        .main-nav-link {
+            font-family:$headline;
+            color:#4b413c;
+            text-transform:uppercase;
+            text-decoration:none;
+            font-weight:bold;
+            font-size:18px;
+        }
+    }
+}

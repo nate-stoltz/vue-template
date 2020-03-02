@@ -5,6 +5,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
 
 function resolve (dir) {
@@ -16,6 +17,12 @@ module.exports = {
 
   externals: {
     vue: 'Vue'
+  },
+
+  optimization: {
+    minimizer: [new UglifyJsPlugin({
+      cache: false
+    })]
   },
 
   module: {

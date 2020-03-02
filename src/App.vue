@@ -1,17 +1,29 @@
 <template>
   <div class="page-wrap">
-    <div class="center-content">
-      <headline name="Abby" />
-    </div>
+    <Header />
+    <transition
+      name="fade"
+      mode="out-in"
+    >
+      <router-view />
+    </transition>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Headline from './components/Headline/Headline.vue'
+import Header from './components/Header/Header.vue'
+import Footer from './components/Footer/Footer.vue'
 
 export default {
   components: {
-    Headline
+    Header,
+    Footer
+  },
+  data () {
+    return {
+      isVisible: false
+    }
   }
 }
 </script>

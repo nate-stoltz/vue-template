@@ -1,6 +1,6 @@
 <template>
   <h1 class="headline">
-    Hello {{ name }}!
+    This is the {{ name }}!
   </h1>
 </template>
 

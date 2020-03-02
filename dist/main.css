@@ -1,11 +1,2 @@
-.page-wrap {
-  width: 100vw;
-  height: 100vh;
-  background-color: #333; }
-  .page-wrap .center-content {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .page-wrap .center-content .headline {
-      color: #ff0000; }
+.page-wrap{width:100vw;height:100vh;background-color:#333}.page-wrap .center-content{display:flex;justify-content:center;align-items:center}.page-wrap .center-content .headline{color:#ff0000}
 

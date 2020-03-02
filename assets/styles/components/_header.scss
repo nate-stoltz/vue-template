@@ -1,0 +1,16 @@
+.header {
+    position:relative;
+    width:100%;
+    padding:20px;
+    .center-content {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap:nowrap;
+        padding:0;
+        .header-item {
+
+        }
+    }
+}
